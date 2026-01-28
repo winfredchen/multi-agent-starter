@@ -73,6 +73,7 @@ python main.py --topic "你的研究主题"
 ```bash
 python main.py --topic "人工智能在医疗领域的应用"
 ```
+![alt text](./doc/image.png)
 
 ### 4. 查看输出
 
