@@ -17,6 +17,10 @@ __pycache__/
 
 # output
 output/
+# temp files
+temp/
+*.tmp
+*.log
 
 # Distribution / packaging
 .Python

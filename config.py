@@ -22,5 +22,8 @@ TAVILY_CONFIG = {
 OUTPUT_DIR = os.path.join(os.getcwd(), "output")
 MARKDOWN_DIR = os.path.join(OUTPUT_DIR, "markdown")
 
+# 临时存储路径配置
+TEMP_DIR = os.path.join(os.getcwd(), "temp")
+
 # 最大搜索轮次
 MAX_SEARCH_ROUNDS = 3
