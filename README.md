@@ -2,7 +2,7 @@
 
 > 多Agent协作系统的快速入门参考项目
 
-这是一个用于学习和参考的多Agent协作系统示例项目，展示了如何使用GLM API（OpenAI兼容）和Tavily网络搜索构建一个完整的应用研究系统。
+这是一个用于学习和参考的多Agent协作系统示例项目，展示了如何使用LLM API（OpenAI兼容）和Tavily网络搜索构建一个完整的应用研究系统。
 
 ## 项目结构
 
@@ -16,7 +16,7 @@ multi-agent-starter/
 │   ├── writer_agent.py          # 写作Agent（生成报告）
 │   └── judger_agent.py          # 判断Agent（评估质量）
 ├── utils/
-│   ├── llm_client.py            # GLM API客户端（单例）
+│   ├── llm_client.py            # LLM API客户端（单例）
 │   ├── output_manager.py        # Markdown输出管理器
 │   ├── response_parser.py       # LLM响应解析器
 │   └── temp_storage.py          # 临时存储管理器
@@ -70,9 +70,9 @@ cp .env.example .env
 
 编辑 `.env` 文件：
 ```env
-GLM_BASE_URL=https://open.bigmodel.cn/api/paas/v4/
-GLM_API_KEY=your_glm_api_key_here
-GLM_MODEL=glm-4-flash
+BASE_URL=https://open.bigmodel.cn/api/paas/v4/
+API_KEY=your_api_key_here
+MODEL=your_model_name_here
 
 TAVILY_API_KEY=your_tavily_api_key_here
 ```
@@ -128,11 +128,11 @@ temp/
 - `MAX_SEARCH_ROUNDS`: 最大搜索轮次（默认3轮）
 - `MARKDOWN_DIR`: Markdown输出目录
 - `TEMP_DIR`: 临时存储目录
-- GLM和Tavily的API配置
+- LLM和Tavily的API配置
 
 ## 依赖说明
 
-- `openai`: GLM API兼容客户端
+- `openai`: OpenAI API兼容客户端
 - `tavily-python`: 网络搜索
 - `python-dotenv`: 环境变量管理
 - `fastapi`: Web框架
