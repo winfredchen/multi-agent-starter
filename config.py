@@ -8,9 +8,9 @@ load_dotenv()
 
 # GLM API配置
 GLM_CONFIG = {
-    "base_url": os.getenv("GLM_BASE_URL", "https://open.bigmodel.cn/api/paas/v4/"),
-    "api_key": os.getenv("GLM_API_KEY"),
-    "model": os.getenv("GLM_MODEL", "glm-4-flash")
+    "base_url": os.getenv("BASE_URL", "https://open.bigmodel.cn/api/paas/v4/"),
+    "api_key": os.getenv("API_KEY"),
+    "model": os.getenv("MODEL", "glm-4-flash")
 }
 
 # Tavily API配置
