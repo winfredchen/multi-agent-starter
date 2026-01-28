@@ -65,7 +65,7 @@ def test_directories():
 
 if __name__ == "__main__":
     print("="*50)
-    print("ApplicationResearchAgent 环境测试")
+    print("Multi-Agent Starter 环境测试")
     print("="*50)
 
     all_passed = True

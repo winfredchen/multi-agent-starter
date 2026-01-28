@@ -1,9 +1,25 @@
 [project]
-name = "applicationresearchagent"
+name = "multi-agent-starter"
 version = "0.1.0"
-description = "Add your description here"
+description = "多Agent协作系统的快速入门参考项目，使用GLM API（OpenAI兼容），集成Tavily网络搜索，输出Markdown研究报告"
 readme = "README.md"
 requires-python = ">=3.12"
 dependencies = [
-    "pip>=25.3",
+    "openai>=1.0.0",
+    "tavily-python>=0.5.0",
+    "python-dotenv>=1.0.0",
+    "fastapi>=0.100.0",
+    "uvicorn>=0.23.0",
+    "jinja2>=3.1.0",
+    "python-multipart>=0.0.22",
 ]
+
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+include = ["agents*", "prompts*", "utils*"]
+
+[tool.setuptools.package-data]
+"*" = ["*.html", "*.md"]
